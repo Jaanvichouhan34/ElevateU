@@ -1,5 +1,5 @@
 # 🚀 ElevateU: Your Personalized Self-Improvement Hub
-
+![LIVE](https://elevate-u-rose.vercel.app/)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-18-blue.svg)
 ![Node.js](https://img.shields.io/badge/Node.js-18-green.svg)
@@ -40,7 +40,7 @@
 
 ## 🚀 Live Demo
 
-- **Frontend Deployment:** Vercel (Coming Soon)
+- **Frontend Deployment:** Vercel ![LIVE](https://elevate-u-rose.vercel.app/)
 - **Backend API:** [Render Production URL](https://elevateu-backend-act6.onrender.com)
 
 ---
