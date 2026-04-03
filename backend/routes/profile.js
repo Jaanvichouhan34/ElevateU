@@ -9,12 +9,10 @@ const auth = require('../middleware/auth');
 // GET /api/profile/:userId
 router.get('/:userId', auth, async (req, res) => {
   try {
-    const isDemo = req.headers.authorization?.includes('demo-token') || mongoose.connection.readyState !== 1;
-    
-    if (isDemo) {
+    if (mongoose.connection.readyState !== 1) {
       return res.status(200).json({ 
-        user: { name: 'Demo User', email: 'demo@elevateu.com', level: 'Intermediate', streak: 4 }, 
-        stats: { scans: 12, quizzes: 8 } 
+        user: { name: 'User', email: '', level: 'Starter', streak: 0, xp: 0, nextLevelXp: 1000 }, 
+        stats: { scans: 0, quizzes: 0 } 
       });
     }
 
@@ -26,11 +24,7 @@ router.get('/:userId', auth, async (req, res) => {
 
     res.status(200).json({ user, stats: { scans: scanCount, quizzes: quizCount } });
   } catch (error) {
-    // If DB error during real request, still try to show demo info
-    res.status(200).json({ 
-      user: { name: 'Demo User', email: 'demo@elevateu.com', level: 'Intermediate', streak: 4 }, 
-      stats: { scans: 12, quizzes: 8 } 
-    });
+    res.status(500).json({ message: 'Error fetching profile' });
   }
 });
 

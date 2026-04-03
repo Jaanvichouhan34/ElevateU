@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# environment variables
+.env
+.env.*
+backend/.env
+frontend/.env
+*.local
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+backend/build
+frontend/build
+
+# IDEs and OS
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db

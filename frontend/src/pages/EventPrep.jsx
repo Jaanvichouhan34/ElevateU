@@ -7,14 +7,37 @@ const EventPrep = () => {
   const [selectedEvent, setSelectedEvent] = useState('Interview');
   const [activeTab, setActiveTab] = useState('outfit'); // 'outfit', 'communication', 'bodyLanguage'
 
-  const events = [
-    { id: 'Interview', icon: '💼' },
-    { id: 'Viva', icon: '🎓' },
-    { id: 'Presentation', icon: '📊' },
-    { id: 'Group Discussion', icon: '👥' },
-    { id: 'Meeting', icon: '🤝' },
-    { id: 'First Date', icon: '✨' }
-  ];
+  const iconMap = {
+    'Interview': '💼',
+    'Presentation': '📊',
+    'First Date': '✨',
+    'Networking Event': '🤝',
+    'Salary Negotiation': '💰',
+    'Client Dinner': '🍽️',
+    'Graduation Ceremony': '🎓',
+    'Media Interview': '🎥',
+    'Viva': '🗣️',
+    'Group Discussion': '👥',
+    'Meeting': '📅',
+    'Hackathon': '💻',
+    'Job Fair': '🎪',
+    'Investor Pitch': '🚀',
+    'Office Party': '🎉',
+    'College Fest': '🎸',
+    'Panel Discussion': '🎙️',
+    'Product Launch': '📦',
+    'Award Ceremony': '🏆',
+    'Casual Friday': '👖',
+    'Wedding Guest': '💍',
+    'Daily Office': '🏢',
+    'Career Fair': '🎫',
+    'Alumni Meet': '🏫'
+  };
+
+  const events = Object.keys(prepData).map(key => ({
+    id: key,
+    icon: iconMap[key] || '🎯'
+  }));
 
   const tabs = [
     { id: 'outfit', label: 'Outfit', icon: <Shirt size={18} /> },

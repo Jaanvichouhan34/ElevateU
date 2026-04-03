@@ -16,6 +16,7 @@ import Help from './pages/Help';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import Contact from './pages/Contact';
+import HowItWorks from './pages/HowItWorks';
 
 const PrivateRoute = ({ children }) => {
   const token = localStorage.getItem('token');
@@ -43,6 +44,7 @@ function App() {
                 <Route path="/privacy" element={<Privacy />} />
                 <Route path="/terms" element={<Terms />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/how-it-works" element={<HowItWorks />} />
 
                 {/* Shared Feature Routes */}
                 <Route path="/outfit-scanner" element={<OutfitScanner />} />

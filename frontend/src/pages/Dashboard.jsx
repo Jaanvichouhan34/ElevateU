@@ -27,65 +27,45 @@ const Dashboard = () => {
     const userId = localStorage.getItem('userId') || 'demo_user';
     const token = localStorage.getItem('token');
     
-    // Demo data fallback
-    const demoUser = {
-      name: "Alex Thompson",
-      email: "alex.t@example.com",
-      streak: 7,
-      level: "Intermediate",
-      xp: 2450,
-      nextLevelXp: 3000
+    // Initialize empty values so the UI doesn't crash if the server returns missing data
+    const defaultUser = {
+      name: localStorage.getItem('userName') || "User",
+      email: "",
+      streak: 0,
+      level: "Starter",
+      xp: 0,
+      nextLevelXp: 1000
     };
 
-    const demoStats = { scans: 12, quizzes: 8 };
-
-    const demoHistory = [
-      { _id: '1', event: 'Job Interview', inputType: 'image', date: new Date().toISOString(), aiResponse: { score: 8 } },
-      { _id: '2', event: 'Presentation', inputType: 'text', date: new Date(Date.now() - 86400000).toISOString(), aiResponse: { score: 9 } },
-      { _id: '3', event: 'Wedding', inputType: 'image', date: new Date(Date.now() - 172800000).toISOString(), aiResponse: { score: 7 } },
-    ];
-
-    const demoQuizHistory = [
-      { date: new Date(Date.now() - 432000000).toISOString(), score: 4 },
-      { date: new Date(Date.now() - 345600000).toISOString(), score: 6 },
-      { date: new Date(Date.now() - 259200000).toISOString(), score: 5 },
-      { date: new Date(Date.now() - 172800000).toISOString(), score: 8 },
-      { date: new Date(Date.now() - 86400000).toISOString(), score: 9 },
-    ];
+    if (!token) {
+      window.location.href = '/login';
+      return;
+    }
 
     try {
-      if (token) {
-        const res = await axios.get(`${API_BASE_URL}/api/profile/${userId}`, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        setUser(res.data.user);
-        setStats(res.data.stats);
-        setEditData({ name: res.data.user.name, level: res.data.user.level });
+      const res = await axios.get(`${API_BASE_URL}/api/profile/${userId}`, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setUser({ ...defaultUser, ...res.data.user });
+      setStats(res.data.stats || { scans: 0, quizzes: 0 });
+      setEditData({ name: res.data.user?.name || defaultUser.name, level: res.data.user?.level || defaultUser.level });
 
-        const scanRes = await axios.get(`${API_BASE_URL}/api/outfit/history/${userId}`, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        setHistory(scanRes.data);
+      const scanRes = await axios.get(`${API_BASE_URL}/api/outfit/history/${userId}`, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setHistory(scanRes.data || []);
 
-        const progressRes = await axios.get(`${API_BASE_URL}/api/trainer/progress/${userId}`, {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-        setQuizHistory(progressRes.data.quizHistory);
-      } else {
-        // Use demo data
-        setUser(demoUser);
-        setStats(demoStats);
-        setHistory(demoHistory);
-        setQuizHistory(demoQuizHistory);
-        setEditData({ name: demoUser.name, level: demoUser.level });
-      }
+      const progressRes = await axios.get(`${API_BASE_URL}/api/trainer/progress/${userId}`, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      setQuizHistory(progressRes.data?.quizHistory || []);
     } catch (err) {
       console.error(err);
-      // Fallback to demo
-      setUser(demoUser);
-      setStats(demoStats);
-      setHistory(demoHistory);
-      setQuizHistory(demoQuizHistory);
+      // Fallback empty data if server error, no demo data
+      setUser(defaultUser);
+      setStats({ scans: 0, quizzes: 0 });
+      setHistory([]);
+      setQuizHistory([]);
     } finally {
       setLoading(false);
     }
@@ -181,7 +161,7 @@ const Dashboard = () => {
                        <div className="flex-1 space-y-6 text-center md:text-left">
                           <div>
                              <h3 className="text-sm font-black uppercase tracking-[0.3em] text-indigo-500 mb-2">Current Proficiency</h3>
-                             <h2 className="text-5xl font-black tracking-tighter italic">{user.level} <span className="text-xl text-slate-300 not-italic ml-2 font-black">LV. 14</span></h2>
+                             <h2 className="text-5xl font-black tracking-tighter italic">{user.level}</h2>
                           </div>
                           
                           <div className="space-y-3">

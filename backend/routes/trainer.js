@@ -97,13 +97,7 @@ router.post('/chat', auth, async (req, res) => {
 router.get('/progress/:userId', auth, async (req, res) => {
   try {
     if (mongoose.connection.readyState !== 1) {
-      return res.status(200).json({ 
-        quizCount: 8, 
-        quizHistory: [
-          { _id: 'q1', topic: 'Grammar', score: 9, date: new Date(Date.now() - 86400000) },
-          { _id: 'q2', topic: 'Vocabulary', score: 7, date: new Date() }
-        ] 
-      });
+      return res.status(200).json({ quizCount: 0, quizHistory: [] });
     }
     const quizCount = await QuizResult.countDocuments({ userId: req.params.userId });
     const quizHistory = await QuizResult.find({ userId: req.params.userId }).sort({ date: 1 });

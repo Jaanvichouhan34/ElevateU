@@ -19,7 +19,7 @@ const Login = () => {
     setError('');
     try {
       const res = await axios.post(`${API_BASE_URL}/api/auth/login`, formData);
-      login(res.data.token, res.data.userId);
+      login(res.data.token, res.data.userId, res.data.name);
       navigate('/');
     } catch (err) {
       setError(err.response?.data?.message || 'Invalid credentials');

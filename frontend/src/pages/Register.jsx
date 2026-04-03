@@ -19,7 +19,7 @@ const Register = () => {
     setError('');
     try {
       const res = await axios.post(`${API_BASE_URL}/api/auth/register`, formData);
-      login(res.data.token, res.data.userId);
+      login(res.data.token, res.data.userId, res.data.name || formData.name);
       navigate('/');
     } catch (err) {
       setError(err.response?.data?.message || 'Something went wrong');

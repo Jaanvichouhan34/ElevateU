@@ -10,9 +10,11 @@ const OutfitScanner = () => {
   const [description, setDescription] = useState('');
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
+  const [showAllEvents, setShowAllEvents] = useState(false);
   const fileInputRef = useRef(null);
 
-  const events = ['Interview', 'Presentation', 'Party', 'Wedding', 'Office', 'College'];
+  const events = Object.keys(scannerData);
+  const visibleEvents = showAllEvents ? events : events.slice(0, 6);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -96,7 +98,7 @@ const OutfitScanner = () => {
                     <Target size={24} className="mr-3 text-indigo-600" /> Target Event
                   </h3>
                   <div className="grid grid-cols-1 gap-3">
-                    {events.map(event => (
+                    {visibleEvents.map(event => (
                        <button
                          key={event}
                          onClick={() => setSelectedEvent(event)}
@@ -106,6 +108,14 @@ const OutfitScanner = () => {
                          {selectedEvent === event && <motion.div layoutId="check" className="w-6 h-6 bg-white rounded-full flex items-center justify-center text-indigo-600"><CheckCircle2 size={16} /></motion.div>}
                        </button>
                     ))}
+                    {events.length > 6 && (
+                      <button 
+                        onClick={() => setShowAllEvents(!showAllEvents)}
+                        className="mt-2 w-full py-4 rounded-[2rem] bg-indigo-600/5 text-indigo-600 font-black text-sm hover:bg-indigo-600/10 transition-colors active:scale-95"
+                      >
+                        {showAllEvents ? 'Show Less' : `+ ${events.length - 6} More Options`}
+                      </button>
+                    )}
                   </div>
                </div>
             </div>

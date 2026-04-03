@@ -1,214 +1,794 @@
 export const prepData = {
-  Interview: {
-    outfit: {
-      "Attire Strategy": [
-        "Go for a classic well-tailored suit in dark colors (blue, charcoal).",
-        "A crisp white or ivory button-down shirt is non-negotiable.",
-        "Ensure your shoes are polished and match your belt leather."
+  "Interview": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Interview.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
       ],
-      "Grooming Checklist": [
-        "Fresh haircut and well-groomed facial hair.",
-        "Clean, trimmed nails — avoid loud polish.",
-        "Subtle fragrance; your presence should be felt, not smelled."
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Interview."
       ]
     },
-    communication: {
-      "Pitch Perfect": [
-        "Start with a strong 'Tell me about yourself' elevator pitch.",
-        "Use the STAR method (Situation, Task, Action, Result) for answers.",
-        "Pause for 2 seconds before answering to show thoughtfulness."
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
       ],
-      "Questions to Ask": [
-        "What does success look like in this role for the first 90 days?",
-        "How would you describe the team's working culture?",
-        "What are the company's biggest challenges currently?"
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
       ]
     },
-    bodyLanguage: {
-      "Silent Authority": [
-        "Maintain steady eye contact with the entire panel.",
-        "Keep your hands visible on the table, not in your lap.",
-        "Sit upright with a slight lean forward to show engagement."
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
       ],
-      "Confidence Cues": [
-        "Walk in with your head held high and shoulders back.",
-        "Offer a firm, brief handshake (if culturally appropriate).",
-        "Avoid fidgeting with pens, rings, or your phone."
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
       ]
     }
   },
-  Viva: {
-    outfit: {
-      "Academic Look": [
-        "Formal or semi-formal academic attire (shirt and trousers).",
-        "Subdued colors to maintain a serious, scholarly vibe.",
-        "Comfortable shoes as you might be standing or presenting."
+  "Presentation": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Presentation.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
       ],
-      "Practical Tips": [
-        "Ensure your ID card or lanyard is clean and properly displayed.",
-        "Keep your hair out of your eyes to maintain engagement."
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Presentation."
       ]
     },
-    communication: {
-      "Defense Strategy": [
-        "Acknowledge the examiner's question before answering.",
-        "Be concise and stick to the technical facts of your project.",
-        "If you don't know an answer, admit it politely and offer to find out."
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
       ],
-      "Tone of Voice": [
-        "Clear, audible volume even if you're nervous.",
-        "Moderate pace; avoid rushing through technical explanations."
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
       ]
     },
-    bodyLanguage: {
-      "Exam Presence": [
-        "Stand or sit with an open posture — no crossed arms.",
-        "Use hand gestures to emphasize key technical points.",
-        "Look at both the examiner and your project materials."
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
       ],
-      "Composure": [
-        "Take a deep breath before answering a trick question.",
-        "Manage your anxiety by grounding your feet firmly on the floor."
-      ]
-    }
-  },
-  Presentation: {
-    outfit: {
-      "Stage Style": [
-        "Smart-casual or business-formal depending on the venue.",
-        "Choose breathable fabrics to stay cool under stage lights.",
-        "Avoid distracting patterns that might clash with your slides."
-      ],
-      "Final Touches": [
-        "Check that your mic pack or remote fits easily in your pocket.",
-        "Have a clean handkerchief ready for any stage nerves."
-      ]
-    },
-    communication: {
-      "Public Speaking": [
-        "Hook your audience in the first 30 seconds with a story or fact.",
-        "Vary your pitch and tone to avoid a monotone delivery.",
-        "Invite the audience to participate or ask questions."
-      ],
-      "Handling Slides": [
-        "Don't read directly from the screen; use it as a visual aid.",
-        "Explain complex charts simply and point to key data."
-      ]
-    },
-    bodyLanguage: {
-      "Dynamic Presence": [
-        "Don't hide behind the podium; move around the space.",
-        "Use expansive gestures to look more confident and a dominant.",
-        "Make eye contact with different sections of the room."
-      ],
-      "Stance": [
-        "Stand with your feet shoulder-width apart for stability.",
-        "Keep your chin up and project your voice to the back."
-      ]
-    }
-  },
-  "Group Discussion": {
-    outfit: {
-      "Collaborative Style": [
-        "Neat semi-formal or smart-casual attire.",
-        "Light colors to appear approachable and team-oriented.",
-        "Minimal jewelry to avoid any distracting noise."
-      ],
-      "Impression": [
-        "Ensure your clothes are perfectly ironed and clean."
-      ]
-    },
-    communication: {
-      "Dialogue Skills": [
-        "Initiate the discussion if you have a strong opening point.",
-        "Actively listen and build upon other people's ideas.",
-        "Respectfully disagree without being aggressive or loud."
-      ],
-      "Key Phrases": [
-        "I'd like to add to what [Name] just mentioned...",
-        "That's an interesting point, however, considering...",
-        "Shall we move towards a conclusion based on these points?"
-      ]
-    },
-    bodyLanguage: {
-      "Team Signals": [
-        "Nod while others are speaking to show you're listening.",
-        "Lean towards the speaker to indicate interest.",
-        "Maintain eye contact with the person you're addressing."
-      ],
-      "Engagement": [
-        "Keep an open palm gesture when explaining your points.",
-        "Avoid looking at the moderator; focus on your peers."
-      ]
-    }
-  },
-  Meeting: {
-    outfit: {
-      "Office Professional": [
-        "Business casual: chinos and a tucked-in polo or shirt.",
-        "Safe colors like blue, grey, or white.",
-        "Comfortable but smart loafers or dress shoes."
-      ],
-      "Ready for Work": [
-        "A professional-looking laptop bag or folder."
-      ]
-    },
-    communication: {
-      "Engagement Strategy": [
-        "Arrive with a notepad and pen; take strategic notes.",
-        "Speak up during the 'Any other business' section.",
-        "Follow up with a summary email after the meeting."
-      ],
-      "Professional Courtesy": [
-        "Don't interrupt others; wait for a natural pause.",
-        "Acknowledge the meeting leader's points clearly."
-      ]
-    },
-    bodyLanguage: {
-      "Professional Posture": [
-        "Sit on the edge of the chair to appear more alert.",
-        "Place your hands on the table to show transparency.",
-        "Mirror the body language of the meeting leader subtly."
-      ],
-      "Active Presence": [
-        "Maintain eye contact with whoever is speaking.",
-        "Avoid checking your watch or phone repeatedly."
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
       ]
     }
   },
   "First Date": {
-    outfit: {
-      "Dating Style": [
-        "Dress one level above the venue's requirements.",
-        "Well-fitted dark jeans and a high-quality tee or shirt.",
-        "Clean, stylish sneakers or boots — shoes are noticed!"
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the First Date.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
       ],
-      "Date Ready": [
-        "Smell great but don't overdo the cologne.",
-        "Ensure your breath is fresh and your hair is neat."
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to First Date."
       ]
     },
-    communication: {
-      "Connection Skills": [
-        "Ask open-ended 'How' and 'Why' questions.",
-        "Share a few interesting personal stories or hobbies.",
-        "Give sincere compliments that aren't just about looks."
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
       ],
-      "Flow": [
-        "Keep the conversation balanced; don't hog the spotlight.",
-        "Listen more than you speak; show genuine curiosity."
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
       ]
     },
-    bodyLanguage: {
-      "Romantic Cues": [
-        "Lean in slightly to show attraction and interest.",
-        "Smile often and maintain warm, friendly eye contact.",
-        "Keep your body oriented towards your date."
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
       ],
-      "Confidence": [
-        "Keep your hands relaxed; don't fidget with your glass.",
-        "Laugh genuinely when they say something funny."
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
       ]
     }
-  }
+  },
+  "Networking Event": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Networking Event.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Networking Event."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Salary Negotiation": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Salary Negotiation.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Salary Negotiation."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Client Dinner": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Client Dinner.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Client Dinner."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Graduation Ceremony": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Graduation Ceremony.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Graduation Ceremony."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Media Interview": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Media Interview.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Media Interview."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Viva": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Viva.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Viva."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Group Discussion": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Group Discussion.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Group Discussion."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Meeting": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Meeting.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Meeting."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Hackathon": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Hackathon.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Hackathon."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Job Fair": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Job Fair.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Job Fair."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Investor Pitch": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Investor Pitch.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Investor Pitch."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Office Party": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Office Party.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Office Party."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "College Fest": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the College Fest.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to College Fest."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Panel Discussion": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Panel Discussion.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Panel Discussion."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Product Launch": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Product Launch.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Product Launch."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Award Ceremony": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Award Ceremony.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Award Ceremony."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Casual Friday": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Casual Friday.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Casual Friday."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Wedding Guest": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Wedding Guest.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Wedding Guest."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Daily Office": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Daily Office.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Daily Office."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Career Fair": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Career Fair.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Career Fair."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
+  "Alumni Meet": {
+    "outfit": {
+      "Style Rules": [
+        "Dress appropriately for the Alumni Meet.",
+        "Ensure your clothes are well-ironed.",
+        "Choose comfortable but professional footwear."
+      ],
+      "Bonus Tip": [
+        "Confidence is the best accessory you can wear to Alumni Meet."
+      ]
+    },
+    "communication": {
+      "Key Strategies": [
+        "Speak clearly and maintain a moderate pace.",
+        "Listen actively before responding.",
+        "Ask insightful questions."
+      ],
+      "Phrasing": [
+        "Avoid filler words like 'um' or 'like'.",
+        "Frame your sentences positively."
+      ]
+    },
+    "bodyLanguage": {
+      "Posture": [
+        "Stand or sit up straight with your shoulders back.",
+        "Maintain natural eye contact.",
+        "Avoid crossing your arms."
+      ],
+      "Presence": [
+        "Use hand gestures to emphasize points but do not overdo it."
+      ]
+    }
+  },
 };

@@ -10,23 +10,26 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const savedToken = localStorage.getItem('token');
     const savedUserId = localStorage.getItem('userId');
+    const savedUserName = localStorage.getItem('userName');
     if (savedToken && savedUserId) {
       setToken(savedToken);
-      setUser({ id: savedUserId });
+      setUser({ id: savedUserId, name: savedUserName });
     }
     setLoading(false);
   }, []);
 
-  const login = (newToken, userId) => {
+  const login = (newToken, userId, userName) => {
     localStorage.setItem('token', newToken);
     localStorage.setItem('userId', userId);
+    if(userName) localStorage.setItem('userName', userName);
     setToken(newToken);
-    setUser({ id: userId });
+    setUser({ id: userId, name: userName });
   };
 
   const logout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
+    localStorage.removeItem('userName');
     setToken(null);
     setUser(null);
   };

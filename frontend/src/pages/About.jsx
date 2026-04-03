@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   const stats = [
-    { label: 'Event Types', value: '6', icon: <Target size={20} /> },
-    { label: 'Quiz Questions', value: '45+', icon: <Zap size={20} /> },
+    { label: 'Event Types', value: '24+', icon: <Target size={20} /> },
+    { label: 'Quiz Questions', value: '300+', icon: <Zap size={20} /> },
     { label: 'AI Modules', value: '3', icon: <Sparkles size={20} /> },
     { label: 'Prep Guides', value: '18', icon: <Users size={20} /> }
   ];

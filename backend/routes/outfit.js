@@ -125,12 +125,7 @@ router.post('/scan-text', auth, async (req, res) => {
 router.get('/history/:userId', auth, async (req, res) => {
   try {
     if (mongoose.connection.readyState !== 1) {
-      return res.status(200).json([
-        { 
-          _id: 'd1', event: 'Interview', inputType: 'image', score: 9, date: new Date(),
-          aiResponse: { score: 9, appropriate: ['Professional fit', 'Classic colors'], notSuitable: [], improvements: [], groomingTips: [] }
-         }
-      ]);
+      return res.status(200).json([]);
     }
     const history = await OutfitScan.find({ userId: req.params.userId }).sort({ date: -1 }).limit(10);
     res.status(200).json(history);
