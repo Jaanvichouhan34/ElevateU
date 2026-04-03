@@ -1,10 +1,10 @@
 # 🚀 ElevateU: Your Personalized Self-Improvement Hub
-![LIVE](https://elevate-u-rose.vercel.app/)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/React-18-blue.svg)
 ![Node.js](https://img.shields.io/badge/Node.js-18-green.svg)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC.svg)
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248.svg)
+[Live Demo](https://elevate-u-rose.vercel.app/)
 
 **ElevateU** is a comprehensive, full-stack self-advancement platform designed to help you prepare for professional environments, optimize your communication skills, and bring out your best self. It uses AI to analyze outfits, provide communication feedback, and offer structured quizzes.
 
@@ -40,7 +40,8 @@
 
 ## 🚀 Live Demo
 
-- **Frontend Deployment:** Vercel ![LIVE](https://elevate-u-rose.vercel.app/)
+- **Frontend Deployment:** Vercel [🚀 Live Demo](https://elevate-u-rose.vercel.app/)
+
 - **Backend API:** [Render Production URL](https://elevateu-backend-act6.onrender.com)
 
 ---
